@@ -54,6 +54,13 @@ body {
     left: 352px;
     top: 631px;
 }
+#visit {
+    position: absolute;
+    left: 1118px;
+    top: 690px;
+    width: 254px;
+    height: 16px;
+}
 </style>
 </head>
 
@@ -93,7 +100,11 @@ body {
   <div id="d31"><img src="Page2/资源 16.png" width="139" height="68" alt=""/></div>
   <div id="d32"><img src="Page2/资源 17.png" width="590" height="44" alt=""/></div>
 
-  <script language=JavaScript>
+ 
+  <div id="visit">
+	  昨日访问量：0 ｜
+	
+	 <script language=JavaScript>
     <!--
     var caution = false
     function setCookie(name, value, expires, path, domain, secure){
@@ -141,9 +152,13 @@ body {
     else
     visits = parseInt(visits) + 1
     setCookie("counter", visits, now)
-    document.write("您是第" + visits + "位访问本网页的！")
+    document.write("今日访问量：" + visits )
     // -->
     </script>
+	
+	
+	
+	</div>
 
 	
 </div>
